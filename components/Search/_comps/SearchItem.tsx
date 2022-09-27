@@ -106,6 +106,5 @@ const SearchItem = (props: Props) => {
     </Box>
   );
 };
-// background: `${languageColor[props.item.language as keyof string]}`,
 
 export default SearchItem;

@@ -30,7 +30,7 @@ export default function MyApp(props: MyAppProps) {
           <CssBaseline />
           <Box
             sx={{
-              maxWidth: { sm: 440, xs: "auto" },
+              maxWidth: { sm: 500, xs: "auto" },
               width: "100%",
               height: "100%",
               bottom: 0,
