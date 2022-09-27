@@ -51,7 +51,7 @@ const Search = (): JSX.Element => {
 
       <InfiniteScroll
         data={projects}
-        renderItem={({ item }) => <SearchItem key={item.id} item={item} />}
+        renderItem={(item) => <SearchItem key={item.id} item={item} />}
         onEndReached={fetchNextPageRepository}
         hasNextPage={!isFetchingRepository && hasNextPageRepository}
       />

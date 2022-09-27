@@ -84,9 +84,7 @@ const IssueItem = (props: Props) => {
       {isDetailShow ? (
         <InfiniteScroll
           data={projects}
-          renderItem={({ item }) => (
-            <IssueDetailItem key={item.id} item={item} />
-          )}
+          renderItem={(item) => <IssueDetailItem key={item.id} item={item} />}
           onEndReached={() => {
             fetchNextPageIssue();
           }}

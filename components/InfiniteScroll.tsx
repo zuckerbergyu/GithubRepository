@@ -6,13 +6,13 @@ import Observer from "./Observer";
 type Props = {
   data: any[];
   onEndReached?: () => void;
-  renderItem: ({ item }: { item: any }) => React.ReactNode;
+  renderItem: (item: any) => React.ReactNode;
   hasNextPage?: boolean;
 };
 const InfiniteScroll = (props: Props) => {
   return (
     <Box sx={{ height: "100%" }}>
-      {props.data.map((item) => props.renderItem({ item }))}
+      {props.data.map((item) => props.renderItem(item))}
       {props.hasNextPage ? (
         <Observer
           onObserved={() => {
